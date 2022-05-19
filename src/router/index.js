@@ -5,7 +5,11 @@ import ChartPage from '@/views/ChartPage'
 
 const routes = [
   {
-    path: 'admin/create',
+    path: '/',
+    redirect: '/2'
+  },
+  {
+    path: '/admin/create',
     name: 'QuestionsCreate',
     component: CreateFormPage
   },
@@ -16,8 +20,8 @@ const routes = [
     props: true
   },
   {
-    path: 'chart/:id',
-    name: 'QuestionAnswer',
+    path: '/chart/:id',
+    name: 'QuestionChart',
     component: ChartPage,
     props: true
   }
